@@ -1,0 +1,55 @@
+#info h3 {
+    font-size: 2.5em;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+#info h4 {
+    font-size: 1.25em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#info .contenedor {
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgba(45, 80, 46, 0.8);
+    margin-bottom: 2em;
+}
+
+.filosofia {
+    margin: 20px;
+}
+
+.filosofia img {
+    height: fit-content;
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+    border: 7px solid rgba(45, 80, 46, 0.4);
+}
+
+#info a {
+    text-decoration: none;
+    color: rgba(45, 80, 46, 0.6);
+}
+
+#info a:hover {
+    color: rgba(45, 80, 46, 0.9);
+}
+
+@media (min-width:1000px) {
+    .filosofia {
+        width: auto;
+    }
+}
+
+@media (max-width:999px) {
+    #destacado .contenedor {
+        width: 500px;
+    }
+}

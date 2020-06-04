@@ -1,0 +1,11 @@
+#Primer Bloque, impedimos que se rastree carpetas
+User-agent: *
+Disallow: /recursos
+
+#Segundo Bloque
+User-Agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+
+#Sitemap, puedes añadir más de uno
+Sitemap: https://www.mont-taber.com/sitemap.xml

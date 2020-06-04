@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+@import url('menu.css');
+
+@import url('banner.css');
+
+@import url('juegos.css');
+
+@import url('filosofia.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Bitter', serif;
+}
+
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: indigo;
+
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    z-index: 100;
+}
+
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+#contenedor img {
+    float: left;
+    padding: 5px;
+}
+
+.contenedor h2,
+.contenedor h3,
+.contenedor li,
+.contenedor p {
+    max-width: 98%;
+}
+
+h1 {
+    float: left;
+    padding: 5px;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section,
+aside {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+#destacado .contenedor {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(252, 241, 223, 0.9);
+    color: rgba(45, 80, 46, 0.8);
+    border-radius: 30px;
+    margin-bottom: 2em;
+    max-width: 90%;
+}
+
+#destacado h2 {
+    margin-top: 1em;
+    font-size: 2.5em;
+    padding: 2em;
+    text-align: center;
+}
+
+.articulo {
+    margin: 10px;
+    max-width: 390px;
+}
+
+.articulo img {
+    height: fit-content;
+    max-width: 350px;
+    max-height: 150px;
+    border-radius: 5px;
+    border: 2px solid rgba(45, 80, 46, 0.4);
+}
+
+.articulo h3 {
+    font-size: 1.25em;
+    padding: 0.5em;
+    text-align: center;
+    max-width: 350px;
+}
+
+.articulo h4 {
+    font-size: 1.10em;
+    padding: 0.5em;
+    text-align: center;
+    max-width: 350px;
+}
+
+.articulo p {
+    font-size: 1.10em;
+    padding: 0.5em;
+    max-width: 350px;
+}
+
+.articulo a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5em;
+    color: rgba(45, 80, 46, 0.6);
+    max-width: 350px;
+}
+
+.articulo li {
+    margin-left: 15px;
+    max-width: 350px;
+}
+
+.articulo a:hover {
+    color: rgba(45, 80, 46, 0.9);
+}
+
+.distribucion p {
+    font-size: 1.10em;
+    padding: 1em;
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.copy {
+    font-size: 0.8em;
+    padding: 1em;
+    color: indigo;
+}
+
+.copy a {
+    text-decoration: none;
+    color: indigo;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.social a {
+    color: indigo;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+form {
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 1.10em;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: indigo;
+    font-size: 1em;
+    padding: 1em;
+    color: lemonchiffon;
+    width: 20%;
+    height: 50px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 1.05em;
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 90%;
+    }
+
+}
+
+@media (min-width:1000px) {
+    #destacado .contenedor {
+        width: 800px;
+    }
+
+    .articulo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:999px) {
+    #destacado .contenedor {
+        width: 90%;
+    }
+}
+
+@media (min-width:1000px) {
+    .social {
+        width: fit-content;
+    }
+
+    .copy {
+        font-size: 1em;
+    }
+
+    footer .contenedor {
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: rgba(252, 241, 223, 0.9);
+        margin-bottom: 2em;
+    }
+}
